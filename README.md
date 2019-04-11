@@ -24,8 +24,9 @@ Another point one can consider is that, since **identicons** are viewed by human
 
 <img src="/res/pic1.png" alt="icon1" width="200"/> <img src="/res/pic2.png" alt="icon2" width="200"/> <img src="/res/pic3.png" alt="icon3" width="200"/>
 
-<img src="/res/pic4.png" alt="icon4" width="200"/> <img src="/res/pic5.png" alt="icon5" width="200"/>
+<img src="/res/pic5.png" alt="icon5" width="200"/> <img src="/res/pic6.png" alt="icon6" width="200"/> <img src="/res/pic7.png" alt="icon7" width="200"/>
 
+<img src="/res/pic8.png" alt="icon8" width="200"/> <img src="/res/pic9.png" alt="icon9" width="200"/>
 
 # References
 1. https://github.com/donpark/identicon
