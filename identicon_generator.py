@@ -16,7 +16,7 @@ hashbin = bin(int(hash, 16))[2: ]
 table = [[0] * size for i in range(size)]
 
 # Encoding:
-#   every 3rd bit: dots starting from upper-left to lower-right
+#   every 12th bit: dots starting from upper-left to lower-right
 #   bit 136-143: hue
 #   bit 144-151: sat
 #   bit 152-159: val (bright)
