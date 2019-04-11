@@ -12,7 +12,7 @@ s = input('Icon size: [5-10, default=5] ')
 size = int(s) if s != '' else 5
 if size not in range(5, 11): size = 5
 hash = hashlib.sha1(input('ID code: ').encode('utf8')).hexdigest()
-hashbin = bin(int(hash, 16))[2:]
+hashbin = bin(int(hash, 16))[2: ]
 table = [[0] * size for i in range(size)]
 
 # Encoding:
@@ -27,9 +27,9 @@ for i in range(size):
         table[i][j] = table[i][size-1 - j] = hashbin[idx]
         idx += 3
 
-hue = int(hash[34:35], 16) / 256
+hue = int(hash[34:36], 16) / 256
 # acceptable sat: 45-100
-sat = int(hash[36:37], 16) / 256 * 55 + 45
+sat = int(hash[36:38], 16) / 256 * 55 + 45
 # acceptable val: 45-80, depending on sat
 if sat < 60:
     vrange = (sat - 45) / 15 * 5 + 25
@@ -43,7 +43,7 @@ elif sat > 85:
 else:
     vbase = (sat - 70) / 15 * 10 + 50
 
-val = int(hash[38:39], 16) / 256 * vrange + vbase
+val = int(hash[38:40], 16) / 256 * vrange + vbase
 color = mcolors.hsv_to_rgb((hue, sat / 100, val / 100))
 
 # draw Identicon
