@@ -1,6 +1,6 @@
 # Identicon Generator (Github-like)
 
-An [Identicon](https://en.wikipedia.org/wiki/Identicon) is an **icon** that contains a hash value representing part of your **identity**. Although it is not known how *Github* generates each user's Identicon, it's not too hard to make one.
+An [Identicon](https://en.wikipedia.org/wiki/Identicon) is an *icon* that contains a hash value representing part of your *identity*. Although it is not known how *Github* generates each user's Identicon, it's not too hard to make one.
 
 For a 5x5 "Github-like" identicon, observe that all of them are **horizontally symmetric**, which means that the pattern itself only contains 5\*3 = 15 bits of information. Other than that, the color only contains 3 bytes of info, assuming that each of the rgb-channel takes up 8 bits. Since we don't use many bits, there is no need to compute a *strong and long* hash value. A sha1 hash would do the favor.
 
