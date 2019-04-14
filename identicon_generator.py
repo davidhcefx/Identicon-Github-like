@@ -55,6 +55,7 @@ for i in range(size):
         patches.append(mpatches.Rectangle((j, size - i - 1), 1, 1))
         colors.append(color if table[i][j] == '1' else (1, 1, 1))
     print('')
+print('(R,G,B) = (%.2f, %.2f, %.2f)' % tuple(color))
 
 fig, ax = plt.subplots()
 collection = PatchCollection(patches, cmap=plt.cm.hsv)
