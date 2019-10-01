@@ -11,7 +11,7 @@ Another point one can consider is that, **since identicons are viewed by humans,
 Another point one can consider is that, **since identicons are viewed by humans, two color would become indistinguishable if their pixel values are close to each other**. Consider a method in generating the dots like this: `Starting from the grid at the upper-left corner. Draw a dot if the first hex-value in the hash string is greater than 0x7, otherwise don't.` However, if two bytes from different hash strings are having values that are close to each other, not only would their color be alike, the patterns were also more likely to be the same (For example, 'ad15' would have the same pattern as 'cf06' in this scenario). A better design would be: Even though the two bytes' value are close, the patterns are still decided independently.
 
 
-# Usage
+## Usage
 
 * `python3 [thisProgramName.py]`
 
@@ -22,7 +22,7 @@ Another point one can consider is that, **since identicons are viewed by humans,
   https://repl.it/repls/SophisticatedFlawedGreenware
 
 
-# Gallery
+## Gallery
 
 <img src="/res/pic1.png" alt="icon1" width="200"/> <img src="/res/pic2.png" alt="icon2" width="200"/> <img src="/res/pic3.png" alt="icon3" width="200"/>
 
@@ -30,7 +30,7 @@ Another point one can consider is that, **since identicons are viewed by humans,
 
 <img src="/res/pic8.png" alt="icon8" width="200"/> <img src="/res/pic9.png" alt="icon9" width="200"/>
 
-# References
+## References
 1. https://github.com/donpark/identicon
 
     The father of identicon. He used predefined geometry patches to create the icon, which is really cool.
