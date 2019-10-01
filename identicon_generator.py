@@ -15,11 +15,12 @@ hash = hashlib.sha1(input('ID code: ').encode('utf8')).hexdigest()
 hashbin = bin(int(hash, 16))[2: ]
 table = [[0] * size for i in range(size)]
 
-# Encoding:
-#   every 12th bit: dots starting from upper-left to lower-right
+# The Encoding:
+#   every 3rd bit: dots starting from upper-left to lower-right
 #   bit 136-143: hue
 #   bit 144-151: sat
 #   bit 152-159: val (bright)
+# Note that the "acceptable" ranges below were decided empirically.
 
 idx = 0
 for i in range(size):
