@@ -11,13 +11,11 @@ Another point one can consider is that, **since identicons are viewed by humans,
 
 ## Usage
 
-* `python3 [thisProgramName.py]`
+* [Try it online!](https://colab.research.google.com/drive/1G33hutP_mZ-tGPu6n8htb_nAgL5R1j6N#scrollTo=WGfZ4sADmm8U&line=2&uniqifier=1)
 
-  <img src="/res/usage.png" alt="Screenshot" width="800"/>
+* `python3 identicon_generator.py`
 
-* Run it online! *But no pop-up window showing the color :-(*
-
-  https://repl.it/repls/SophisticatedFlawedGreenware
+  <img src="/res/usage.png" alt="Screenshot" width=80%/>
 
 
 ## Gallery
